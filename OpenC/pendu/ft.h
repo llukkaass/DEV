@@ -1,3 +1,4 @@
-void	ft_assigne_etoile();
-void	ft_affiche(char *str);
-void	ft_compare(char *origine, char lettre_entree);
+void	ft_chr(char *chaine,char cara);
+void	etoile(char *str);
+void	ft_pendu(int pv);
+void	ft_lecturebibli(void);

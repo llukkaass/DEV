@@ -4,6 +4,6 @@
 
 int main(int argc, char const *argv[])
 {
-	ft_putnbr(-2147483646);
+	ft_putnbr(-214);
 	return 0;
 }
