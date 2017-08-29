@@ -35,46 +35,51 @@ void	ft_putstr(char	*str)
 //BUG NB NEGATIF 
 void	ft_putnbr(int nb)
 {
-	if(nb == -2147483647)
+	if(nb == -2147483648)
 	{
 		ft_putchar('-');
 		ft_putchar('2');
-		ft_putnbr(147483647);
+		nb = 147483648;
 	}
-	else if(nb < 0)
+	
+	if(nb < 0)
 	{
 		ft_putchar('-');
-		ft_putnbr(nb * (-1));
+		nb *= -1;
 	}
-	else if(nb >= 10)
+	
+	if(nb >= 10)
 	{
 		ft_putnbr(nb / 10);
 	}
 	ft_putchar((nb % 10) + '0');
 }
 
-
-
-void	ft_print_comb(void)
+int		ft_atoi(char *str)
 {
-	int index = 012;
-	int u = 0;
-	int d = 0;
-	int c = 0;
-	while(index <= 789)
+	int nb;
+	int sign;
+	int i;
+
+	i = 0;
+	nb = 0;
+	sign = 1;
+	while (str[i])
 	{
-		u = (index % 10);
-		d = (index % 100 / 10);
-		c = (index / 100);
-		if(c != u && c != d && d != u && c < d && d < u)
-		{		
-			ft_putchar(c + '0');
-			ft_putchar(d + '0');
-			ft_putchar(u +'0');
-			ft_putchar(' ');
+		while (str[i] == '\t' || str[i] == '\v' || str[i] == '\r' 
+		|| str[i] == ' ' || str[i] == '+')
+			i++;
+
+		while (str[i] == '-')
+		{
+			sign = -1;
+			i++;
 		}
-
-			index ++;
+		while (str[i] <= '9' && str[i] >= '0')
+		{
+			nb = nb * 10 + (str[i] - '0');
+			i++;
+		}
+		return (nb * sign);
 	}
-
 }

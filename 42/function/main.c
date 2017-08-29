@@ -1,9 +1,12 @@
 
-
+#include <stdlib.h>
 #include "function.h"
+#include <stdio.h>
 
 int main(int argc, char const *argv[])
 {
-	ft_putnbr(-214);
+	
+	printf("%d\n",atoi("-12q34"));
+	printf("%d\n",ft_atoi("-12q34"));
 	return 0;
 }

@@ -6,7 +6,7 @@ void	ft_putchar(char	c);
 void	ft_putstr(char	*str);
 void	ft_print_comb(void);
 void	ft_putnbr(int nb);
-
+int 	ft_atoi(char *str);
 
 
 #endif
