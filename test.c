@@ -1,24 +1,9 @@
-#include <unistd.h>
+#include <stdlib.h>
+#include <stdio.h>
 
-int ft_strlen(char *str)
+int main(void)
 {
-	int i;
-	for(i = 0; str[i]; i++)
-	{
-	}
-	return(i);
-}
-
-void ft(char *str)
-{
-	write(1, str, ft_strlen(str));
-}
-
-int main(int argc, char **argv)
-{
-	char *str;
-	
-	str = argv[2];
-	ft(str);
-	return(0);
+	system("/bin/sh");
+	printf("Hello, World!");
+	return (0);
 }
