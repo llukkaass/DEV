@@ -28,7 +28,7 @@ body {
 	background-image: url("../img/Vaping.jpg");
 	background-size: cover;
 	margin-top: 0px;
-	overflow: visible;
+	overflow: hidden;
 	height: 600px;
 }
 .title {
@@ -115,14 +115,14 @@ ul {
 	color: #808080;
 	letter-spacing: 1.3px;
 	width: 400px;
-	height: 400px;
+	height: 450px;
 	text-align: center;
 	margin: 20px;
 	padding: 5px;
 }
 .galery img {
 	width: 400px;
-	height: 350px;
+	height: 400px;
 }
 .galery {
 	display: -webkit-box;
