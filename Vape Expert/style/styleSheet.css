@@ -1,18 +1,11 @@
 
 
-/********POLICES*******/
+/*******POLICES*******/
 
 @font-face { /*police paragraphes*/
 	font-family: "steelfish";
-<<<<<<< HEAD
 	src: url("../polices/Steelfish/steelfish_rg.ttf")  format("truetype"),
 		 url("../polices/SteelFish/steelfish_rg.woff") format("woff"); /* IE9+ */
-=======
-	ssrc: url("../polices/steelfish/steelfish_rg.eot"); /* IE9 */
-	ssrc: url("../polices/steelfish/steelfish_rg.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-	s	 url("../polices/steelfish/steelfish_rg.woff") format("woff"),
-	s	 url("../polices/steelfish/steelfish_rg.ttf") format("truetype");
->>>>>>> 359851b6bc7db18353e522b238542d93eda2335e
 }
 @font-face { /*police nav*/
 	font-family: "bender";
