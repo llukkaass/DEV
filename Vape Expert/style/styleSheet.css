@@ -68,10 +68,9 @@ ul {
 	background-color: rgba(0,0,0,0.29);
 }
 .nav {	
-	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
+	/* -webkit-box-pack: center; */
 	-ms-flex-pack: center;
 	justify-content: center;
 	border-top: solid 0.05em rgba(255,255,255,0.5);
