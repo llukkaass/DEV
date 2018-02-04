@@ -4,10 +4,10 @@
 
 @font-face { /*police paragraphe*/
 	font-family: "steelfish";
-	src: url("../polices/steelfish/steelfish_rg.eot"); /* IE9 */
-	src: url("../polices/steelfish/steelfish_rg.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-		 url("../polices/steelfish/steelfish_rg.woff") format("woff"),
-		 url("../polices/steelfish/steelfish_rg.ttf") format("truetype");
+	ssrc: url("../polices/steelfish/steelfish_rg.eot"); /* IE9 */
+	ssrc: url("../polices/steelfish/steelfish_rg.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	s	 url("../polices/steelfish/steelfish_rg.woff") format("woff"),
+	s	 url("../polices/steelfish/steelfish_rg.ttf") format("truetype");
 }
 @font-face { /*police nav*/
 	font-family: "bender";
