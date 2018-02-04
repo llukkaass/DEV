@@ -2,20 +2,20 @@
 
 /*******POLICES*******/
 
-@font-face { /*police paragraphe*/
+@font-face { /*police paragraphes*/
 	font-family: "steelfish";
-	src: url("../polices/steelfish/steelfish_rg.eot"); /* IE9 */
-	src: url("../polices/steelfish/steelfish_rg.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-		 url("../polices/steelfish/steelfish_rg.woff") format("woff"),
-		 url("../polices/steelfish/steelfish_rg.ttf") format("truetype");
+	src: url("../polices/Steelfish/steelfish_rg.ttf")  format("truetype"),
+		 url("../polices/SteelFish/steelfish_rg.woff") format("woff"); /* IE9+ */
 }
 @font-face { /*police nav*/
 	font-family: "bender";
-	src: url('../polices/bender.otf');
+	src: url("../polices/bender/bender.otf"),
+		 url("../polices/bender/bender.woff"); /* IE9+ */
 }
 @font-face { /*police titres*/
 	font-family: "Engebrechtre";
-	src: url('../polices/Engebrechtre-Bold-Italic.ttf');
+	src: url("../polices/Engebrechtre/Engebrechtre-Bold-Italic.ttf"),
+		 url("../polices/Engebrechtre/Engebrechtre-Bold-Italic.woff"); /* IE9+ */
 }
 
 /*******POLICES-END*******/
@@ -47,7 +47,7 @@ body {
 ul {
 	font-family: sans-serif;
 	list-style-type: none;
-	margin-top: 151px;
+	margin-top: 155px;
 	background-color: rgba(150, 150, 150, 0.35);
 	overflow: visible;
 	width: auto;
@@ -71,10 +71,8 @@ ul {
 	background-color: rgba(0,0,0,0.29);
 }
 .nav {	
-	display: -ms-flexbox;
+	
 	display: flex;
-	/* -webkit-box-pack: center; */
-	-ms-flex-pack: center;
 	justify-content: center;
 	border-top: solid 0.05em rgba(255,255,255,0.5);
 }
@@ -89,7 +87,7 @@ ul {
 /**********MAIN**********/
 .contenu {
 	display: -webkit-flex;
-	-webkit-flex-wrap: wrap;
+	display: flex;
 	justify-content: center;
 }
 .article .title2 {
